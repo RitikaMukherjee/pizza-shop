@@ -1,5 +1,6 @@
 import React from 'react';
 import {Container,Row,Col} from "react-bootstrap"
+import Footer from './Footer';
 const About = () => {
   return <>
         <Container style={{marginTop:"50px"}}>
@@ -26,6 +27,7 @@ const About = () => {
                 </Row>
             </Row>
         </Container>
+        <Footer/>
   </>;
 };
 

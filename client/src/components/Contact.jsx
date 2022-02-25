@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container,Row,Col,Table,Image} from "react-bootstrap"
 import {FiPhoneCall,FiSmartphone,FiMail} from "react-icons/fi"
+import Footer from './Footer';
 const Contact = () => {
   return <>
         <Container style={{marginTop:"50px"}}>
@@ -40,6 +41,7 @@ const Contact = () => {
                 </Col>
             </Row>
         </Container>
+        <Footer/>
   </>;
 };
 

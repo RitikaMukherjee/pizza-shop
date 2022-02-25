@@ -2,6 +2,7 @@ import React from 'react';
 import AllPizza from "../pizza-data"
 import {Container,Row,Col} from "react-bootstrap"
 import Pizza from '../components/Pizza';
+import Footer from '../components/Footer';
 const Homescreen = () => {
   return <>
     <Container style={{marginTop:"50px"}}>
@@ -13,6 +14,7 @@ const Homescreen = () => {
             ))}
         </Row>
     </Container>
+    <Footer/>
   </>;
 };
 

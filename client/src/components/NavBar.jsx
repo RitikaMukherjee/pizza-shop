@@ -1,6 +1,7 @@
 import React from 'react';
 import {Navbar,Nav,Container,Image} from "react-bootstrap"
 import {LinkContainer} from "react-router-bootstrap"
+import {FaShoppingCart} from "react-icons/fa"
 const NavBar = () => {
   return <>
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -15,7 +16,7 @@ const NavBar = () => {
                     <Nav.Link>Login</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to={"/cart"} activeClassName>
-                    <Nav.Link>Cart</Nav.Link>
+                    <Nav.Link><FaShoppingCart/></Nav.Link>
                 </LinkContainer>
             </Nav>
         </Navbar.Collapse>

@@ -8,6 +8,7 @@ import Policy from "./components/Policy";
 import NavBar from "./components/NavBar";
 import Homescreen from "./screens/Homescreen";
 import Login from "./components/Login";
+import Signup from "./components/Signup";
 function App() {
   return (
     <>
@@ -15,11 +16,12 @@ function App() {
           <Topbar/>
           <NavBar/>
           <Switch>
+            <Route path="/" component={Homescreen} exact />
             <Route path="/about" component={About} exact />
             <Route path="/contact" component={Contact} exact />
-            <Route path="/Policy" component={Policy} exact />
-            <Route path="/" component={Homescreen} exact />
+            <Route path="/policy" component={Policy} exact />
             <Route path="/login" component={Login} exact />
+            <Route path="/signup" component={Signup} exact />
           </Switch>
       </BrowserRouter>
     </>

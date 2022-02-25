@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container,Row,Col} from "react-bootstrap"
-
+import Footer from './Footer';
 const Policy = () => {
   return <>
     <Container style={{marginTop:'50px'}}>
@@ -22,6 +22,7 @@ const Policy = () => {
             </Col>
         </Row>
     </Container>
+    <Footer/>
   </>;
 };
 

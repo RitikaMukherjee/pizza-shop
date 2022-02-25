@@ -11,7 +11,7 @@ const Pizza = ({pizza}) => {
   const handleShow = () => setShow(true);
 
   const handleQuantity=(data)=>{
-      count=data;
+      count +=data;
   }
   return <>
     <Card style={{ width: '18rem' }} style={{margin:"10px"}}>
@@ -37,7 +37,7 @@ const Pizza = ({pizza}) => {
             <Row>
               <Col>Price : {(pizza.prices[0][varient])*count}</Col>
             </Row>
-            <Button variant="secondary">Add to curt</Button>
+            <Button variant="secondary">Add to cart</Button>
         </Card.Body>
     </Card>
       <Modal show={show} onHide={handleClose}>
